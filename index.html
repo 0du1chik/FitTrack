@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Каталог тренувань та вправ | FitTrack</title>
+</head>
+<body>
+
+  <header id="site-header" class="site-header">
+    <div class="brand">
+      <h1>FitTrack — Довідник силових та функціональних вправ</h1>
+      <p>Платформа для планування тренувань, аналізу техніки та прогресу навантажень.</p>
+    </div>
+
+    <nav id="main-nav" class="main-nav" aria-label="Головна навігація">
+      <ul>
+        <li><a href="#exercises">Вправи</a></li>
+        <li><a href="#filters">Фільтри</a></li>
+        <li><a href="#about-author">Про автора</a></li>
+        <li><a href="#contacts">Контакти</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content" class="main-content">
+
+    <section id="filters" class="section-filters" aria-labelledby="filters-heading">
+      <h2 id="filters-heading">Параметри підбору вправ</h2>
+      <form action="#" method="get" class="filter-form">
+        <fieldset>
+          <legend>Фільтрація та сортування</legend>
+
+          <p>
+            <label for="filter-muscle">Група м'язів:</label>
+            <select id="filter-muscle" name="muscle_group">
+              <option value="">Усі групи м'язів</option>
+              <option value="chest">Грудні</option>
+              <option value="back">Спина</option>
+              <option value="legs">Ноги</option>
+              <option value="shoulders">Плечі</option>
+              <option value="core">М'язи кору</option>
+            </select>
+          </p>
+
+          <p>
+            <label for="filter-difficulty">Рівень складності:</label>
+            <select id="filter-difficulty" name="difficulty">
+              <option value="">Будь-який</option>
+              <option value="beginner">Початковий</option>
+              <option value="intermediate">Середній</option>
+              <option value="advanced">Просунутий</option>
+            </select>
+          </p>
+
+          <p>
+            <label for="sort-reps">Мінімальна кількість повторень:</label>
+            <input type="number" id="sort-reps" name="min_reps" min="1" max="50" value="5">
+          </p>
+
+          <p>
+            <button type="submit">Застосувати фільтри</button>
+            <button type="reset">Скинути</button>
+          </p>
+        </fieldset>
+      </form>
+    </section>
+
+    <section id="exercises" class="section-catalog" aria-labelledby="catalog-heading">
+      <h2 id="catalog-heading">Каталог вправ</h2>
+      <p>Оберіть техніку з переліку для включення до тренувальної програми.</p>
+
+      <ul class="exercise-list">
+
+        <!-- Картка 1 -->
+        <li class="exercise-item">
+          <article class="exercise-card" aria-labelledby="exercise-1-title">
+            <header class="card-header">
+              <h3 id="exercise-1-title">Присідання зі штангою на плечах</h3>
+              <p>Категорія: <strong>Ноги</strong></p>
+            </header>
+
+            <figure class="card-media">
+              <img src="images/squat-1200.webp"
+                   srcset="images/squat-600.webp 600w, images/squat-1200.webp 1200w"
+                   sizes="(max-width: 600px) 600px, 1200px"
+                   alt="Атлет виконує глибоке присідання зі штангою на плечах, кут у колінах 90 градусів"
+                   title="Техніка виконання класичних присідань"
+                   width="1200"
+                   height="900"
+                   fetchpriority="high">
+              <figcaption>Класичні присідання (Back Squat)</figcaption>
+            </figure>
+
+            <div class="card-details">
+              <dl>
+                <dt>Базовий обсяг:</dt>
+                <dd><data value="8">8</data> повторень у підході</dd>
+
+                <dt>Складність:</dt>
+                <dd>Середній</dd>
+
+                <dt>Дата оновлення техніки:</dt>
+                <dd><time datetime="2026-09-15">15 вересня 2026</time></dd>
+
+                <dt>Базова вправа:</dt>
+                <dd>Так</dd>
+              </dl>
+              <p><strong>Опис техніки:</strong> Ноги на ширині плечей, спина пряма з природним прогином. Опускайтеся до паралелі стегон із підлогою, тримаючи коліна на одній лінії з носками.</p>
+            </div>
+          </article>
+        </li>
+
+        <!-- Картка 2 -->
+        <li class="exercise-item">
+          <article class="exercise-card" aria-labelledby="exercise-2-title">
+            <header class="card-header">
+              <h3 id="exercise-2-title">Жим штанги лежачи</h3>
+              <p>Категорія: <strong>Грудні</strong></p>
+            </header>
+
+            <figure class="card-media">
+              <img src="images/bench-press-1000.webp"
+                   srcset="images/bench-press-500.webp 500w, images/bench-press-1000.webp 1000w"
+                   sizes="(max-width: 600px) 500px, 1000px"
+                   alt="Атлет лежить на горизонтальній лаві та вижимає штангу вгору на прямі руки"
+                   title="Класичний жим на горизонтальній лаві"
+                   width="1000"
+                   height="563"
+                   loading="lazy">
+              <figcaption>Жим штанги на горизонтальній лаві</figcaption>
+            </figure>
+
+            <div class="card-details">
+              <dl>
+                <dt>Базовий обсяг:</dt>
+                <dd><data value="10">10</data> повторень у підході</dd>
+
+                <dt>Складність:</dt>
+                <dd>Початковий</dd>
+
+                <dt>Дата оновлення техніки:</dt>
+                <dd><time datetime="2026-09-18">18 вересня 2026</time></dd>
+
+                <dt>Базова вправа:</dt>
+                <dd>Так</dd>
+              </dl>
+              <p><strong>Опис техніки:</strong> Зведіть лопатки, зафіксуйте стопи на підлозі. Опускайте гриф під контролем на рівень нижньої частини грудей, після чого потужно тисніть угору без відриву таза.</p>
+            </div>
+          </article>
+        </li>
+
+        <!-- Картка 3 -->
+        <li class="exercise-item">
+          <article class="exercise-card" aria-labelledby="exercise-3-title">
+            <header class="card-header">
+              <h3 id="exercise-3-title">Станова тяга</h3>
+              <p>Категорія: <strong>Спина</strong></p>
+            </header>
+
+            <figure class="card-media">
+              <img src="images/deadlift-1200.webp"
+                   srcset="images/deadlift-600.webp 600w, images/deadlift-1200.webp 1200w"
+                   sizes="(max-width: 600px) 600px, 1200px"
+                   alt="Спортсмен у фінальній фазі класичної станової тяги з рівною спиною"
+                   title="Класична станова тяга"
+                   width="1200"
+                   height="672"
+                   loading="lazy">
+              <figcaption>Класична станова тяга з помосту</figcaption>
+            </figure>
+
+            <div class="card-details">
+              <dl>
+                <dt>Базовий обсяг:</dt>
+                <dd><data value="5">5</data> повторень у підході</dd>
+
+                <dt>Складність:</dt>
+                <dd>Просунутий</dd>
+
+                <dt>Дата оновлення техніки:</dt>
+                <dd><time datetime="2026-09-20">20 вересня 2026</time></dd>
+
+                <dt>Базова вправа:</dt>
+                <dd>Так</dd>
+              </dl>
+              <p><strong>Опис техніки:</strong> Початкове положення — штанга торкається гомілок. Рух починається з розгинання ніг, спина зберігає нейтральне положення, штанга рухається суворо вздовж ніг.</p>
+            </div>
+          </article>
+        </li>
+
+        <!-- Картка 4 -->
+        <li class="exercise-item">
+          <article class="exercise-card" aria-labelledby="exercise-4-title">
+            <header class="card-header">
+              <h3 id="exercise-4-title">Підтягування на перекладині</h3>
+              <p>Категорія: <strong>Спина</strong></p>
+            </header>
+
+            <figure class="card-media">
+              <img src="images/pullups-1200.webp"
+                   srcset="images/pullups-600.webp 600w, images/pullups-1200.webp 1200w"
+                   sizes="(max-width: 600px) 900px, 1200px"
+                   alt="Підтягування середнім прямим хватом, підборіддя піднято вище турніка"
+                   title="Підтягування середнім прямим хватом"
+                   width="1200"
+                   height="1194"
+                   loading="lazy">
+              <figcaption>Підтягування на перекладині прямим хватом</figcaption>
+            </figure>
+
+            <div class="card-details">
+              <dl>
+                <dt>Базовий обсяг:</dt>
+                <dd><data value="12">12</data> повторень у підході</dd>
+
+                <dt>Складність:</dt>
+                <dd>Середній</dd>
+
+                <dt>Дата оновлення техніки:</dt>
+                <dd><time datetime="2026-09-01">1 вересня 2026</time></dd>
+
+                <dt>Базова вправа:</dt>
+                <dd>Так</dd>
+              </dl>
+              <p><strong>Опис техніки:</strong> Вихідна точка — повне розгинання рук у висі. Без ривків та розгойдування тягніть груди до перекладини зусиллям найширших м'язів спини, зводячи лопатки.</p>
+            </div>
+          </article>
+        </li>
+
+        <!-- Картка 5 -->
+        <li class="exercise-item">
+          <article class="exercise-card" aria-labelledby="exercise-5-title">
+            <header class="card-header">
+              <h3 id="exercise-5-title">Армійський жим стоячи</h3>
+              <p>Категорія: <strong>Плечі</strong></p>
+            </header>
+
+            <figure class="card-media">
+              <img src="images/overhead-press-1200.webp"
+                   srcset="images/overhead-press-600.webp 600w, images/overhead-press-1200.webp 1200w"
+                   sizes="(max-width: 600px) 600px, 1200px"
+                   alt="Атлет тисне штангу з ключиць над головою стоячи"
+                   title="Вертикальний жим штанги над головою"
+                   width="1200"
+                   height="1196"
+                   loading="lazy">
+              <figcaption>Жим штанги стоячи (OHP)</figcaption>
+            </figure>
+
+            <div class="card-details">
+              <dl>
+                <dt>Базовий обсяг:</dt>
+                <dd><data value="8">8</data> повторень у підході</dd>
+
+                <dt>Складність:</dt>
+                <dd>Середній</dd>
+
+                <dt>Дата оновлення техніки:</dt>
+                <dd><time datetime="2026-09-05">5 вересня 2026</time></dd>
+
+                <dt>Базова вправа:</dt>
+                <dd>Так</dd>
+              </dl>
+              <p><strong>Опис техніки:</strong> Стопи на ширині плечей, сідниці та м'язи кору напружені. Тисніть штангу від ключиць угору по вертикальній траєкторії, фіксуючи руки над потилицею.</p>
+            </div>
+          </article>
+        </li>
+
+        <!-- Картка 6 -->
+        <li class="exercise-item">
+          <article class="exercise-card" aria-labelledby="exercise-6-title">
+            <header class="card-header">
+              <h3 id="exercise-6-title">Планка на ліктях</h3>
+              <p>Категорія: <strong>М'язи кору</strong></p>
+            </header>
+
+            <figure class="card-media">
+              <img src="images/plank-1200.webp"
+                   srcset="images/plank-600.webp 600w, images/plank-1200.webp 1200w"
+                   sizes="(max-width: 600px) 600px, 1200px"
+                   alt="Спортсмен у горизонтальній ізометричній планці на передпліччях із рівним корпусом"
+                   title="Статична планка на підлозі"
+                   width="1200"
+                   height="1196"
+                   loading="lazy">
+              <figcaption>Ізометричне утримання планки</figcaption>
+            </figure>
+
+            <div class="card-details">
+              <dl>
+                <dt>Базовий обсяг:</dt>
+                <dd><data value="60">60</data> секунд під навантаженням</dd>
+
+                <dt>Складність:</dt>
+                <dd>Початковий</dd>
+
+                <dt>Дата оновлення техніки:</dt>
+                <dd><time datetime="2026-09-10">10 вересня 2026</time></dd>
+
+                <dt>Базова вправа:</dt>
+                <dd>Ні</dd>
+              </dl>
+              <p><strong>Опис техніки:</strong> Лікті розташовані під плечовими суглобами. Утримуйте тіло в рівній лінії від верхівки до п'ят без прогину в попереку чи підйому таза догори.</p>
+            </div>
+          </article>
+        </li>
+
+      </ul>
+    </section>
+
+    <!-- Персоналізовані блоки згідно з вимогами практичної частини -->
+    <section id="about-author" class="section-author" aria-labelledby="author-heading">
+      <h2 id="author-heading">Про автора проєкту</h2>
+      <article class="author-profile">
+        <h3>Мартиненко Олександр - Студент спеціальності «Комп'ютерні науки»</h3>
+        <p>Я поєдную вивчення сучасних інженерних технологій веброзробки із систематичними силовими тренуваннями в залі. Мій досвід показав, що чітке розуміння біомеханіки рухів так само важливе, як і правильна семантика коду.</p>
+        <p>Мета мого семестрового проєкту - створити повнофункціональний, швидкий та доступний вебсервіс, який дозволить користувачам будувати тренувальні спліти, фільтрувати базу вправ за цільовими м'язами та відстежувати робочий обсяг.</p>
+      </article>
+    </section>
+
+    <aside id="training-tips" class="supplementary-info" aria-labelledby="tips-heading">
+      <h2 id="tips-heading">Порада для відновлення</h2>
+      <blockquote>
+        <p>«Прогресивне перевантаження працює лише за умови достатнього сну, адекватної гідратації та правильного балансу білків у щоденному раціоні.»</p>
+      </blockquote>
+      <p>Оптимальний час відпочинку між важкими підходами базових рухів: від 2 до 3 хвилин.</p>
+    </aside>
+
+  </main>
+
+  <footer id="contacts" class="site-footer">
+    <section class="footer-contacts">
+      <h2>Контактна інформація</h2>
+      <address>
+        <p>Автор: Мартиненко Олександр</p>
+        <p>Email: <a href="mailto:oleksandr.martynenko@student.sumdu.edu.ua">oleksandr.martynenko@student.sumdu.edu.ua</a></p>
+        <p>Репозиторій проєкту: <a href="https://github.com/0du1chik/FitTrack" target="_blank" rel="noopener noreferrer">GitHub / FitTrack</a></p>
+      </address>
+    </section>
+    <p class="copyright">&copy; <time datetime="2026">2026</time> FitTrack. Лабораторна робота №2. Всі права захищено.</p>
+  </footer>
+
+</body>
+</html>
