@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Інформація про онлайн-довідник вправ FitTrack, відеоінструкції з техніки виконання та часті запитання атлетів.">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <title>Про проєкт — FitTrack</title>
+</head>
+<body>
+
+  <header id="site-header" class="site-header">
+    <div class="brand">
+      <p>FitTrack — Довідник силових вправ</p>
+    </div>
+
+    <nav id="main-nav" class="main-nav" aria-label="Основна навігація">
+      <ul>
+        <li><a href="index.html">Каталог вправ</a></li>
+        <li><a href="about.html" aria-current="page">Про проєкт</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+
+    <section aria-labelledby="about-heading">
+      <h1 id="about-heading">Про навчальний проєкт FitTrack</h1>
+      <p>FitTrack — це відкритий інтерактивний довідник, створений для допомоги початківцям та досвідченим спортсменам у засвоєнні правильної біомеханіки силових вправ.</p>
+    </section>
+
+    <section aria-labelledby="usage-heading">
+      <h2 id="usage-heading">Як користуватися каталогом (Покрокова інструкція)</h2>
+      <ol>
+        <li>Перейдіть до <a href="index.html">каталогу вправ</a> та оберіть потрібну групу м'язів за допомогою фільтрів.</li>
+        <li>Ознайомтеся з короткими картками базових та ізольованих рухів.</li>
+        <li>Натисніть на назву вправи для переходу на сторінку детального опису та таблиці прогресії.</li>
+        <li>Перегляньте навчальне відео з розбором техніки дихання та кутів у суглобах.</li>
+      </ol>
+    </section>
+
+    <section aria-labelledby="roadmap-heading">
+      <h2 id="roadmap-heading">Можливості, які будуть реалізовані незабаром</h2>
+      <ul>
+        <li>Інтерактивний калькулятор одноповторного максимуму (1ПМ).</li>
+        <li>Збереження вибраних вправ у локальне сховище браузера (LocalStorage).</li>
+        <li>Динамічне фільтрування без перезавантаження сторінки засобами JavaScript.</li>
+        <li>Адаптивна темна та світла теми оформлення через CSS-змінні.</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="video-heading">
+      <h2 id="video-heading">Відеоурок: Техніка безпеки при виконанні базових вправ</h2>
+      
+      <video controls width="640" height="360" preload="metadata" poster="media/squat-preview.jpg">
+        <source src="media/squat-technique.webm" type="video/webm">
+        <source src="media/squat-technique.mp4" type="video/mp4">
+        <track kind="captions" src="media/captions-uk.vtt" srclang="uk" label="Українська" default>
+        <p>Ваш браузер не підтримує вбудоване відео. Ви можете <a href="media/squat-technique.mp4">завантажити відеофайл</a> для перегляду.</p>
+      </video>
+    </section>
+
+    <section aria-labelledby="faq-heading">
+      <h2 id="faq-heading">Часті запитання (FAQ)</h2>
+
+      <details name="faq-group" open>
+        <summary>Як часто потрібно змінювати програму тренувань?</summary>
+        <p>Оптимальний період адаптації нервово-м'язової системи становить від 6 до 8 тижнів. Після цього рекомендується змінювати кути навантаження або варіації вправ.</p>
+      </details>
+
+      <details name="faq-group">
+        <summary>Чи обов'язково виконувати присідання зі штангою?</summary>
+        <p>Ні, якщо є медичні протипоказання для хребта. Замінниками можуть слугувати жим ногами у тренажері або болгарські випади.</p>
+      </details>
+
+      <details name="faq-group">
+        <summary>Де знайти вихідний код проєкту?</summary>
+        <p>Уся розмітка розробляється в межах навчального курсу та публікується у відкритому репозиторії GitHub.</p>
+      </details>
+    </section>
+
+    <section aria-labelledby="contacts-heading">
+      <h2 id="contacts-heading">Контакти розробника</h2>
+      <address>
+        <p>Автор проєкту: <strong>Мартиненко Олександр</strong></p>
+        <p>Група: ІН-41/1, Сумський державний університет</p>
+        <p>Електронна пошта: <a href="mailto:oleksandr.martynenko@student.sumdu.edu.ua">oleksandr.martynenko@student.sumdu.edu.ua</a></p>
+      </address>
+    </section>
+
+  </main>
+
+  <footer id="contacts" class="site-footer">
+    <p>&copy; <time datetime="2026">2026</time> FitTrack. Лабораторна робота №3. Всі права захищено.</p>
+  </footer>
+
+</body>
+</html>
