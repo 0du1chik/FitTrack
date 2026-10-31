@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Редагування елемента каталогу вправ FitTrack.">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <title>Редагування: Присідання зі штангою на плечах | FitTrack</title>
+</head>
+<body>
+
+  <header id="site-header" class="site-header">
+    <div class="brand">
+      <p>FitTrack — Панель адміністрування</p>
+    </div>
+
+    <nav id="main-nav" class="main-nav" aria-label="Основна навігація">
+      <ul>
+        <li><a href="index.html">Каталог вправ</a></li>
+        <li><a href="about.html">Про проєкт</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <nav aria-label="Хлібні крихти" class="breadcrumbs">
+    <ol>
+      <li><a href="index.html">Каталог</a></li>
+      <li><a href="admin.html">Адміністрування</a></li>
+      <li aria-current="page">Редагування: Присідання зі штангою на плечах</li>
+    </ol>
+  </nav>
+
+  <main id="main-content" class="main-content">
+
+    <section id="admin-edit-section" aria-labelledby="edit-heading">
+      <h1 id="edit-heading">Редагування вправи: Присідання зі штангою на плечах</h1>
+
+      <form action="admin.html" method="get" id="edit-exercise-form">
+        
+        <!-- Приховане поле з ідентифікатором елемента -->
+        <input type="hidden" name="id" value="1">
+
+        <fieldset>
+          <legend>Основні дані моделі</legend>
+
+          <p>
+            <label for="edit-code">Артикул / Код вправи:</label>
+            <input type="text" id="edit-code" name="code" required pattern="[A-Z]{2}-\d{3}" aria-describedby="edit-code-hint" value="EX-101">
+            <span id="edit-code-hint">Формат: дві великі латинські літери, дефіс та 3 цифри.</span>
+          </p>
+
+          <p>
+            <label for="edit-title">Назва вправи:</label>
+            <input type="text" id="edit-title" name="title" required minlength="3" maxlength="100" value="Присідання зі штангою на плечах">
+          </p>
+
+          <p>
+            <label for="edit-category">Категорія (Група м'язів):</label>
+            <select id="edit-category" name="category" required>
+              <option value="">-- Оберіть категорію --</option>
+              <option value="chest">Грудні</option>
+              <option value="back">Спина</option>
+              <option value="legs" selected>Ноги</option>
+              <option value="shoulders">Плечі</option>
+              <option value="core">М'язи кору</option>
+            </select>
+          </p>
+
+          <p>
+            <label for="edit-reps">Базовий обсяг підходу (повтори/секунди):</label>
+            <input type="number" id="edit-reps" name="baseReps" required min="1" max="500" step="1" value="8">
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Параметри та специфікація</legend>
+
+          <fieldset>
+            <legend>Рівень складності:</legend>
+            <label><input type="radio" name="difficulty" value="easy"> Початковий</label>
+            <label><input type="radio" name="difficulty" value="medium" checked> Середній</label>
+            <label><input type="radio" name="difficulty" value="hard"> Просунутий</label>
+          </fieldset>
+
+          <p>
+            <label for="edit-date">Дата оновлення техніки:</label>
+            <input type="date" id="edit-date" name="updatedAt" required min="2020-01-01" max="2026-12-31" value="2026-03-01">
+          </p>
+
+          <p>
+            <label for="edit-image">Замінити файл зображення:</label>
+            <input type="file" id="edit-image" name="image" accept="image/png,image/jpeg,image/webp">
+          </p>
+
+          <p>
+            <label for="edit-desc">Опис техніки виконання:</label><br>
+            <textarea id="edit-desc" name="description" rows="5" cols="50" maxlength="1000">Ноги на ширині плечей, спина пряма з природним прогином. Опускайтеся до паралелі стегон із підлогою, тримаючи коліна на одній лінії з носками.</textarea>
+          </p>
+
+          <p>
+            <label>
+              <input type="checkbox" name="isBase" value="true" checked>
+              Обов'язкова базова вправа
+            </label>
+          </p>
+        </fieldset>
+
+        <p>
+          <button type="submit">Зберегти зміни</button>
+          <button type="reset">Скасувати зміни</button>
+          <a href="admin.html">Скасувати та повернутися</a>
+        </p>
+      </form>
+    </section>
+
+  </main>
+
+  <footer id="contacts" class="site-footer">
+    <section class="footer-contacts">
+      <h2>Контактна інформація</h2>
+      <address>
+        <p>Автор: Мартиненко Олександр</p>
+        <p>Email: <a href="mailto:oleksandr.martynenko@student.sumdu.edu.ua">oleksandr.martynenko@student.sumdu.edu.ua</a></p>
+        <p>Репозиторій проєкту: <a href="https://github.com/0du1chik/FitTrack" target="_blank" rel="noopener noreferrer">GitHub / FitTrack</a></p>
+      </address>
+    </section>
+    <p class="copyright">&copy; <time datetime="2026">2026</time> FitTrack. Лабораторна робота №4. Всі права захищено.</p>
+    <p><a href="admin.html">Панель адміністрування</a></p>
+  </footer>
+
+</body>
+</html>

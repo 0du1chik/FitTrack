@@ -44,6 +44,7 @@
           <li><a href="#overview">Загальний опис</a></li>
           <li><a href="#specifications">Характеристики</a></li>
           <li><a href="#progression-table">Програма за рівнями</a></li>
+          <li><a href="#feedback-section">Залишити відгук</a></li>
         </ul>
       </nav>
 
@@ -121,6 +122,70 @@
         </table>
       </section>
 
+      <hr>
+
+      <!-- Секція форми відвідувача -->
+      <section id="feedback-section" aria-labelledby="feedback-heading">
+        <h2 id="feedback-heading">Залишити відгук про вправу</h2>
+        <p>Поділіться власним досвідом виконання та підкажіть колегам особливості техніки.</p>
+
+        <form action="details.html" method="get" id="exercise-feedback-form">
+          <p>
+            <label for="user-name">Ім'я атлета:</label>
+            <input type="text" id="user-name" name="userName" autocomplete="name" required minlength="2" placeholder="Олександр">
+          </p>
+
+          <p>
+            <label for="user-email">Електронна пошта:</label>
+            <input type="email" id="user-email" name="userEmail" autocomplete="email" required placeholder="name@example.com">
+          </p>
+
+          <p>
+            <label for="user-phone">Контактний телефон (необов'язково):</label>
+            <input type="tel" id="user-phone" name="userPhone" autocomplete="tel" aria-describedby="phone-hint" placeholder="+380991234567">
+            <span id="phone-hint">Формат: +380XXXXXXXXX</span>
+          </p>
+
+          <fieldset>
+            <legend>Оцінка ефективності вправи (від 1 до 5)</legend>
+            <label><input type="radio" name="rating" value="1" required> 1 (Низька)</label>
+            <label><input type="radio" name="rating" value="2"> 2</label>
+            <label><input type="radio" name="rating" value="3"> 3</label>
+            <label><input type="radio" name="rating" value="4"> 4</label>
+            <label><input type="radio" name="rating" value="5" checked> 5 (Відмінна)</label>
+          </fieldset>
+
+          <p>
+            <label for="equipment-select">Рекомендоване обладнання:</label>
+            <input type="text" id="equipment-select" name="equipment" list="equipment-options" placeholder="Почніть вводити...">
+            <datalist id="equipment-options">
+              <option value="Олімпійська штанга"></option>
+              <option value="Силова рама"></option>
+              <option value="Атлетичний пояс"></option>
+              <option value="Магнезія"></option>
+              <option value="Штангетки"></option>
+            </datalist>
+          </p>
+
+          <p>
+            <label for="user-comment">Ваш коментар або порада щодо виконання:</label><br>
+            <textarea id="user-comment" name="comment" rows="4" cols="50" minlength="10" maxlength="500" placeholder="Поділіться враженнями від техніки..."></textarea>
+          </p>
+
+          <p>
+            <label>
+              <input type="checkbox" name="agree" value="yes" required>
+              Погоджуюся з правилами публікації відгуків
+            </label>
+          </p>
+
+          <p>
+            <button type="submit">Надіслати відгук</button>
+            <button type="reset">Очистити</button>
+          </p>
+        </form>
+      </section>
+
       <p><a href="index.html">← Повернутися до загального каталогу вправ</a></p>
 
     </article>
@@ -128,7 +193,8 @@
   </main>
 
   <footer id="contacts" class="site-footer">
-    <p>&copy; <time datetime="2026">2026</time> FitTrack. Лабораторна робота №3. Мартиненко Олександр (ІН-41/1).</p>
+    <p>&copy; <time datetime="2026">2026</time> FitTrack. Лабораторна робота №4. Мартиненко Олександр (ІН-41/1).</p>
+    <p><a href="admin.html">Панель адміністрування</a></p>
   </footer>
 
 </body>
